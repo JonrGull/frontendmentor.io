@@ -1,7 +1,21 @@
+body {
+  background-color: #f3eae3;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+button {
+  color: rgb(255, 255, 255);
+  font-size: 11px;
+  text-align: center;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid rgb(255, 255, 255);
+  margin-top: 10px;
 }
