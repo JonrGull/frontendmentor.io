@@ -1,5 +1,9 @@
+//import font
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap");
+
 * {
   box-sizing: border-box;
+  font-family: "Epilogue", serif;
 }
 
 .attribution {
@@ -33,9 +37,20 @@
   margin-right: 2vw;
 }
 
-img {
+#hero-text {
+  font-size: 5em;
+}
+
+.hero-image {
   position: relative;
   float: right;
   width: 30%;
   height: auto;
+}
+
+.sponsors-container {
+}
+
+.sponsor_sponsor-img > img {
+  padding: 1vw;
 }
