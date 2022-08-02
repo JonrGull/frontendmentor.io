@@ -19,21 +19,42 @@
 }
 
 .navbar > ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: left;
-  align-items: left;
+  overflow: hidden;
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .navbar > ul > li {
-  margin-right: 1vw;
+  float: left;
+}
+
+.navbar > ul > li > a {
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+#btn-container {
+  float: right;
+}
+
+#btn-container__login-btn,
+#btn-container__register-btn {
+  float: left;
+  margin-right: 30px;
+}
+
+#login-btn {
+}
+
+#register-btn {
 }
 
 #logo {
-  font-size: 1.5em;
+  font-size: 2em;
   font-weight: bold;
-  color: hsl(0, 0%, 0%);
   margin-right: 2vw;
 }
 
@@ -51,6 +72,6 @@
 .sponsors-container {
 }
 
-.sponsor_sponsor-img > img {
+.sponsor__sponsor-img > img {
   padding: 1vw;
 }
