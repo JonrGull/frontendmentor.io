@@ -16,11 +16,15 @@
   padding: 0;
 }
 
-.navbar > ul > li {
+.navbar > ul > li,
+.feature-dropdown,
+.company-dropdown {
   float: left;
 }
 
-.navbar > ul > li > a {
+.navbar > ul > li > a,
+.feature-dropdown,
+.company-dropdown {
   display: block;
   text-align: center;
   padding: 14px 16px;
@@ -32,9 +36,11 @@
   position: absolute;
   background-color: #fafafa;
   min-width: 160px;
+  margin-top: 15px;
   -webkit-box-shadow: 0px 8px 16px 0px #141414;
           box-shadow: 0px 8px 16px 0px #141414;
   z-index: 1;
+  border-radius: 5px;
 }
 
 .dropdown-content a {

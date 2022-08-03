@@ -21,11 +21,15 @@ $tertiary-black: hsl(0, 0%, 8%);
   padding: 0;
 }
 
-.navbar > ul > li {
+.navbar > ul > li,
+.feature-dropdown,
+.company-dropdown {
   float: left;
 }
 
-.navbar > ul > li > a {
+.navbar > ul > li > a,
+.feature-dropdown,
+.company-dropdown {
   display: block;
   text-align: center;
   padding: 14px 16px;
@@ -37,8 +41,10 @@ $tertiary-black: hsl(0, 0%, 8%);
   position: absolute;
   background-color: $primary-white;
   min-width: 160px;
+  margin-top: 15px;
   box-shadow: 0px 8px 16px 0px $tertiary-black;
   z-index: 1;
+  border-radius: 5px;
 }
 
 .dropdown-content a {
