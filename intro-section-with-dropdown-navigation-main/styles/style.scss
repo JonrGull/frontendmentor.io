@@ -66,6 +66,10 @@ $tertiary-black: hsl(0, 0%, 8%);
   display: block;
 }
 
+.dropdown-content > a > img {
+  margin-right: 15px;
+}
+
 #btn-container {
   float: right;
 }

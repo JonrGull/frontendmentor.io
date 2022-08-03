@@ -62,6 +62,10 @@
   display: block;
 }
 
+.dropdown-content > a > img {
+  margin-right: 15px;
+}
+
 #btn-container {
   float: right;
 }
