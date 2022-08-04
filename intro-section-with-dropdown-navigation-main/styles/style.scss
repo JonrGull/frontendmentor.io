@@ -12,24 +12,30 @@ $tertiary-black: hsl(0, 0%, 8%);
 
 .navbar {
   margin-top: 3vh;
+
+  ul {
+    overflow: hidden;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      float: left;
+    }
+  }
+
+  a {
+    display: block;
+    text-align: center;
+    padding: 1vh 2vw;
+    text-decoration: none;
+    cursor: pointer;
+  }
 }
 
-.navbar > ul {
-  overflow: hidden;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-.navbar > ul > li,
 .feature-dropdown,
 .company-dropdown {
   float: left;
-}
-
-.navbar > ul > li > a,
-.feature-dropdown,
-.company-dropdown {
   display: block;
   text-align: center;
   padding: 1vh 2vw;
@@ -46,25 +52,24 @@ $tertiary-black: hsl(0, 0%, 8%);
   box-shadow: 0px 8px 16px 0px $tertiary-black;
   z-index: 1;
   border-radius: 5px;
+
+  a {
+    color: $tertiary-black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  a:hover {
+    background-color: $secondary-gray;
+  }
 }
 
-.dropdown-content a {
-  color: $tertiary-black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-.dropdown-content a:hover {
-  background-color: $secondary-gray;
-}
-
-.feature-dropdown:hover .dropdown-content {
-  display: block;
-}
-
-.company-dropdown:hover .dropdown-content {
-  display: block;
+.feature-dropdown:hover,
+.company-dropdown:hover {
+  .dropdown-content {
+    display: block;
+  }
 }
 
 .dropdown-content > a > img {
@@ -146,8 +151,10 @@ p {
   margin-left: -1vw;
 }
 
-.sponsor__sponsor-img > img {
-  padding: 1.5vw;
+.sponsor__sponsor-img {
+  img {
+    padding: 1.5vw;
+  }
 }
 
 .attribution {
@@ -161,4 +168,18 @@ p {
 }
 .attribUtion a {
   color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    margin: 19vh 0 0 0;
+  }
+  .hero-image {
+    width: 100%;
+    margin: 5vh 0 0 0;
+  }
+  .sponsors-container {
+    margin-top: 10vh;
+    margin-left: 0;
+  }
 }
