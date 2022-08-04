@@ -27,8 +27,9 @@
 .company-dropdown {
   display: block;
   text-align: center;
-  padding: 14px 16px;
+  padding: 1vh 2vw;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .dropdown-content {
@@ -66,6 +67,10 @@
   margin-right: 15px;
 }
 
+.down-arrow {
+  padding-left: 5px;
+}
+
 #btn-container {
   float: right;
 }
@@ -96,6 +101,7 @@
   border-radius: 15px;
   padding: 15px 25px 15px 25px;
   font-size: 1.5em;
+  font-weight: 700;
   cursor: pointer;
 }
 
@@ -106,8 +112,12 @@
 
 #logo {
   font-size: 2em;
-  font-weight: bold;
+  font-weight: 700;
   margin-right: 2vw;
+}
+
+.container {
+  margin: 19vh 0 0 10vw;
 }
 
 #hero-text {
@@ -121,8 +131,13 @@
   height: auto;
 }
 
+p {
+  line-height: 1.5;
+  font-size: 1.2em;
+}
+
 .sponsor__sponsor-img > img {
-  padding: 1vw;
+  padding: 1.5vw;
 }
 
 .attribution {
