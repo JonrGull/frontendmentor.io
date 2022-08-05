@@ -1,6 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap");
-.navbar {
-  margin-top: 3vh;
+.navbar #logo {
+  font-size: 2.3em;
+  font-weight: 700;
+  margin-right: 2vw;
+  margin-top: 1.5vh;
 }
 
 .navbar ul {
@@ -11,28 +14,21 @@
 }
 
 .navbar li {
-  float: left;
-}
-
-.navbar a {
   display: block;
   text-align: center;
   padding: 1vh 2vw;
   text-decoration: none;
   cursor: pointer;
-}
-
-.feature-dropdown,
-.company-dropdown {
+  margin-top: 3vh;
   float: left;
-  display: block;
-  text-align: center;
-  padding: 1vh 2vw;
-  text-decoration: none;
-  cursor: pointer;
 }
 
-.dropdown-content {
+.navbar .feature-dropdown,
+.navbar .company-dropdown {
+  float: left;
+}
+
+.navbar .dropdown-content {
   display: none;
   position: absolute;
   background-color: #fafafa;
@@ -44,52 +40,51 @@
   border-radius: 5px;
 }
 
-.dropdown-content a {
+.navbar .dropdown-content a {
   color: #141414;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
 }
 
-.dropdown-content a:hover {
+.navbar .dropdown-content a:hover {
   background-color: dimgray;
 }
 
-.feature-dropdown:hover .dropdown-content,
-.company-dropdown:hover .dropdown-content {
+.navbar .feature-dropdown:hover .dropdown-content,
+.navbar .company-dropdown:hover .dropdown-content {
   display: block;
 }
 
-.dropdown-content > a > img {
+.navbar .dropdown-content > a > img {
   margin-right: 15px;
 }
 
-.down-arrow {
+.navbar .down-arrow {
   padding-left: 5px;
 }
 
-#btn-container {
+.navbar #btn-container {
   float: right;
 }
 
-#btn-container__login-btn,
-#btn-container__register-btn {
-  float: left;
-  margin-right: 30px;
-}
-
-#btn-container__login-btn {
+.navbar #btn-container #btn-container__login-btn {
+  margin-right: 3vw;
   padding: 5px 0 5px 0;
 }
 
-#btn-container__register-btn {
+.navbar #btn-container #btn-container__register-btn {
+  margin-right: 3vw;
   border: 2px solid #141414;
   border-radius: 15px;
-  padding: 5px 0 5px 0;
+  padding: 15px 25px 15px 25px;
+  margin-top: 1.5vh;
 }
 
-#btn-container__register-btn:hover {
+.navbar #btn-container #btn-container__register-btn:hover {
   background-color: #141414;
+  color: #fafafa;
+  text-decoration: none;
 }
 
 * {
@@ -123,12 +118,6 @@ p {
   color: #fafafa;
 }
 
-#logo {
-  font-size: 2em;
-  font-weight: 700;
-  margin-right: 2vw;
-}
-
 .container {
   display: -ms-grid;
   display: grid;
@@ -137,7 +126,12 @@ p {
   margin-left: 10vw;
 }
 
-.sponsor__sponsor-img img {
+.sponsors-container {
+  margin-left: -1vw;
+  margin-top: -15vh;
+}
+
+.sponsors-container img {
   padding: 1.5vw;
 }
 
@@ -145,12 +139,13 @@ p {
   float: right;
   width: 70%;
   height: auto;
-  margin: 5vh 10vw 0 0;
+  margin-right: 10vw;
 }
 
 .attribution {
   text-align: center;
   font-size: 11px;
+  margin-top: 5vh;
 }
 
 .attribution a {
@@ -170,4 +165,4 @@ p {
     margin-left: 0;
   }
 }
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=main.css.map */
