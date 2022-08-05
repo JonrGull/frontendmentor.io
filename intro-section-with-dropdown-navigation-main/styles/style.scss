@@ -8,28 +8,14 @@
   font-family: "Epilogue", serif;
 }
 
-#btn-container {
-  float: right;
+#hero-text {
+  font-size: 5em;
+  margin-top: 18vh;
 }
 
-#btn-container__login-btn,
-#btn-container__register-btn {
-  float: left;
-  margin-right: 30px;
-}
-
-#btn-container__login-btn {
-  padding: 15px 25px 15px 25px;
-}
-
-#btn-container__register-btn {
-  border: 2px solid $tertiary-black;
-  border-radius: 15px;
-  padding: 15px 25px 15px 25px;
-
-  &:hover {
-    background-color: $tertiary-black;
-  }
+p {
+  line-height: 1.5;
+  font-size: 1.2em;
 }
 
 #learn-btn {
@@ -54,29 +40,15 @@
 }
 
 .container {
-  float: left;
-  margin: 19vh 0 0 10vw;
-}
-
-#hero-text {
-  font-size: 5em;
-}
-
-.hero-image {
-  float: right;
-  width: 28%;
-  height: auto;
-  margin: 5vh 10vw 0 0;
-}
-
-p {
-  line-height: 1.5;
-  font-size: 1.2em;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-left: 10vw;
 }
 
 .sponsors-container {
-  margin-top: 10vh;
-  margin-left: -1vw;
+  // margin-left: -1vw;
+
+  //refactor
 }
 
 .sponsor__sponsor-img {
@@ -85,17 +57,20 @@ p {
   }
 }
 
+.hero-image {
+  float: right;
+  width: 70%;
+  height: auto;
+  margin: 5vh 10vw 0 0;
+}
+
 .attribution {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: auto;
   text-align: center;
   font-size: 11px;
-}
-.attribUtion a {
-  color: hsl(228, 45%, 44%);
+
+  a {
+    color: hsl(231, 45%, 44%);
+  }
 }
 
 @media screen and (max-width: 768px) {

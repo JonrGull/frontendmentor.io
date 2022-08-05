@@ -8,10 +8,10 @@
     list-style-type: none;
     margin: 0;
     padding: 0;
+  }
 
-    li {
-      float: left;
-    }
+  li {
+    float: left;
   }
 
   a {
@@ -68,4 +68,28 @@
 
 .down-arrow {
   padding-left: 5px;
+}
+
+#btn-container {
+  float: right;
+}
+
+#btn-container__login-btn,
+#btn-container__register-btn {
+  float: left;
+  margin-right: 30px;
+}
+
+#btn-container__login-btn {
+  padding: 5px 0 5px 0;
+}
+
+#btn-container__register-btn {
+  border: 2px solid $tertiary-black;
+  border-radius: 15px;
+  padding: 5px 0 5px 0;
+
+  &:hover {
+    background-color: $tertiary-black;
+  }
 }
