@@ -23,8 +23,7 @@
   float: left;
 }
 
-.navbar .feature-dropdown,
-.navbar .company-dropdown {
+.navbar .navbar__links {
   float: left;
 }
 
@@ -51,8 +50,7 @@
   background-color: dimgray;
 }
 
-.navbar .feature-dropdown:hover .dropdown-content,
-.navbar .company-dropdown:hover .dropdown-content {
+.navbar .navbar__links:hover .dropdown-content {
   display: block;
 }
 
@@ -104,38 +102,19 @@
 }
 
 @media (max-width: 800px) {
-  .navbar {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-  }
   .toggle-button {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
-  .navbar-links {
+  .navbar__links {
     display: none;
     width: 100%;
   }
-  .navbar-links ul {
-    width: 100%;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .navbar-links ul li {
+  .navbar__links ul li {
     text-align: center;
   }
-  .navbar-links ul li a {
-    padding: 0.5rem 1rem;
-  }
-  .navbar-links.active {
+  .navbar__links.active {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -146,6 +125,11 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: "Epilogue", serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
 }
 
 #hero-text {
