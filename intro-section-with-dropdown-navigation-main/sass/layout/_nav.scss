@@ -59,7 +59,7 @@
     padding-left: 5px;
   }
 
-  #btn-container {
+  #navbar__btn-container {
     float: right;
 
     #btn-container__login-btn {
@@ -99,16 +99,18 @@
     display: flex;
   }
 
-  .navbar__links {
+  .navbar__links,
+  #navbar__btn-container {
     display: none;
     width: 100%;
-  }
 
-  .navbar__links ul li {
-    text-align: center;
-  }
-
-  .navbar__links.active {
-    display: flex;
+    ul {
+      li {
+        text-align: center;
+      }
+    }
+    &:active {
+      display: flex;
+    }
   }
 }
