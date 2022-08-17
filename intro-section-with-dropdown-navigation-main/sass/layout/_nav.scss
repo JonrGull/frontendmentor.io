@@ -95,22 +95,38 @@
 }
 
 @media (max-width: 800px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
   .toggle-button {
     display: flex;
+    margin: 10px;
   }
 
   .navbar__links,
   #navbar__btn-container {
     display: none;
     width: 100%;
+  }
+
+  .navbar__links {
+    &.active {
+      display: flex;
+    }
 
     ul {
+      width: 100%;
+      flex-direction: column;
+
       li {
         text-align: center;
+
+        a {
+          padding: 1rem;
+        }
       }
-    }
-    &:active {
-      display: flex;
     }
   }
 }
