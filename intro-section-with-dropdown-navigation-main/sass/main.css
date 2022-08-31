@@ -62,16 +62,16 @@
   padding-left: 5px;
 }
 
-.navbar #navbar__btn-container {
+.navbar .navbar__btn-container {
   float: right;
 }
 
-.navbar #navbar__btn-container #btn-container__login-btn {
+.navbar .navbar__btn-container #btn-container__login-btn {
   margin-right: 3vw;
   padding: 5px 0 5px 0;
 }
 
-.navbar #navbar__btn-container #btn-container__register-btn {
+.navbar .navbar__btn-container #btn-container__register-btn {
   margin-right: 3vw;
   border: 2px solid #141414;
   border-radius: 15px;
@@ -79,7 +79,7 @@
   margin-top: 1.5vh;
 }
 
-.navbar #navbar__btn-container #btn-container__register-btn:hover {
+.navbar .navbar__btn-container #btn-container__register-btn:hover {
   background-color: #141414;
   color: #fafafa;
   text-decoration: none;
@@ -102,23 +102,8 @@
 }
 
 @media (max-width: 800px) {
-  .navbar {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-  }
-  .toggle-button {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin: 10px;
-  }
   .navbar__links,
-  #navbar__btn-container {
+  .navbar__btn-container {
     display: none;
     width: 100%;
   }
@@ -129,16 +114,40 @@
   }
   .navbar__links ul {
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
   }
   .navbar__links ul li {
     text-align: center;
   }
-  .navbar__links ul li a {
-    padding: 1rem;
+  .navbar__btn-container.active {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  .toggle-button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 10px;
   }
 }
 
