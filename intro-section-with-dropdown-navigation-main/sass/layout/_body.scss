@@ -9,9 +9,15 @@ body {
   padding: 0;
 }
 
-#hero-text {
-  font-size: 5em;
-  margin-top: 18vh;
+.body-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-left: 10vw;
+
+  &__hero-text {
+    font-size: 5em;
+    margin-top: 18vh;
+  }
 }
 
 p {
@@ -19,7 +25,7 @@ p {
   font-size: 1.2em;
 }
 
-#learn-btn {
+.body-container__learn-btn {
   border: 2px solid $tertiary-black;
   background-color: $primary-white;
   border-radius: 15px;
@@ -34,13 +40,7 @@ p {
   }
 }
 
-.body-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin-left: 10vw;
-}
-
-.sponsors-container {
+.body-container__sponsors-container {
   margin-left: -1vw;
   margin-top: -15vh;
 
@@ -50,7 +50,7 @@ p {
   }
 }
 
-.hero-image {
+.body-container__hero-image {
   float: right;
   width: 70%;
   height: auto;

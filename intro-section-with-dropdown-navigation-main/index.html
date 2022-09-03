@@ -19,17 +19,17 @@
     <nav class="navbar">
       <ul>
         <li id="logo">snap</li>
-        <a href="#" class="toggle-button"
+        <a href="#" class="navbar__menu-btn"
           ><img src="./images/icon-menu.svg" alt="menu"
         /></a>
 
         <div class="navbar__links">
           <li>
             Features<img
-              class="down-arrow"
+              class="navbar__links__down-arrow"
               src="./images/icon-arrow-down.svg"
             />
-            <ul class="dropdown-menu">
+            <ul class="navbar__links__dropdown-menu">
               <li>
                 <a href="#"><img src="./images/icon-todo.svg" />Todo List</a>
               </li>
@@ -49,8 +49,11 @@
 
           <li>
             Company
-            <img class="down-arrow" src="./images/icon-arrow-down.svg" />
-            <ul class="dropdown-menu">
+            <img
+              class="navbar__links__down-arrow"
+              src="./images/icon-arrow-down.svg"
+            />
+            <ul class="navbar__links__dropdown-menu">
               <li><a href="#">History</a></li>
               <li><a href="#">Our Team</a></li>
               <li><a href="#">Blog</a></li>
@@ -62,14 +65,14 @@
         </div>
 
         <div class="navbar__btn-container">
-          <li id="btn-container__login-btn">Login</li>
-          <li id="btn-container__register-btn">Register</li>
+          <li class="navbar__btn-container__login-btn">Login</li>
+          <li class="navbar__btn-container__register-btn">Register</li>
         </div>
       </ul>
     </nav>
     <div class="body-container">
       <main>
-        <h1 id="hero-text">
+        <h1 class="body-container__hero-text">
           Make
           <br />
           remote work
@@ -79,18 +82,18 @@
           Streamline processes, create team rituals, and <br />
           watch productivity soar.
         </p>
-        <button id="learn-btn">Learn more</button>
+        <button class="body-container__learn-btn">Learn more</button>
       </main>
 
       <figure>
         <img
-          class="hero-image"
+          class="body-container__hero-image"
           src="./images/image-hero-desktop.png"
           alt="Man using laptop with abstract shapes around him."
         />
       </figure>
 
-      <div class="sponsors-container">
+      <div class="body-container__sponsors-container">
         <img src="./images/client-databiz.svg" />
         <img src="./images/client-audiophile.svg" />
         <img src="./images/client-meet.svg" />

@@ -1,4 +1,4 @@
-const toggleButton = document.getElementsByClassName("toggle-button")[0];
+const toggleButton = document.getElementsByClassName("navbar__menu-btn")[0];
 const navbarLinks = document.getElementsByClassName("navbar__links")[0];
 const navbarBtn = document.getElementsByClassName("navbar__btn-container")[0];
 
