@@ -16,58 +16,61 @@
     <title>Frontend Mentor | Intro section with dropdown navigation</title>
   </head>
   <body>
-    <nav class="navbar">
-      <ul>
-        <li id="logo">snap</li>
-        <a href="#" class="navbar__menu-btn"
+    <nav>
+      <ul class="navbar">
+        <div class="navbar__logo">snap</div>
+
+        <a href="#" class="navbar__hamburger-btn"
           ><img src="./images/icon-menu.svg" alt="menu"
         /></a>
 
         <div class="navbar__links">
-          <li>
+          <button class="navbar__links__dropdown-header">
             Features<img
               class="navbar__links__down-arrow"
               src="./images/icon-arrow-down.svg"
             />
-            <ul class="navbar__links__dropdown-menu">
-              <li>
-                <a href="#"><img src="./images/icon-todo.svg" />Todo List</a>
-              </li>
-              <li>
-                <a href="#"><img src="./images/icon-calendar.svg" />Calendar</a>
-              </li>
-              <li>
-                <a href="#"
-                  ><img src="./images/icon-reminders.svg" />Reminders</a
-                >
-              </li>
-              <li>
-                <a href="#"><img src="./images/icon-planning.svg" />Planning</a>
-              </li>
-            </ul>
-          </li>
+          </button>
 
-          <li>
+          <ul class="navbar__links__dropdown-menu">
+            <li>
+              <a href="#"><img src="./images/icon-todo.svg" />Todo List</a>
+            </li>
+            <li>
+              <a href="#"><img src="./images/icon-calendar.svg" />Calendar</a>
+            </li>
+            <li>
+              <a href="#"><img src="./images/icon-reminders.svg" />Reminders</a>
+            </li>
+            <li>
+              <a href="#"><img src="./images/icon-planning.svg" />Planning</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="navbar__links">
+          <button class="navbar__links__dropdown-header">
             Company
             <img
               class="navbar__links__down-arrow"
               src="./images/icon-arrow-down.svg"
             />
-            <ul class="navbar__links__dropdown-menu">
-              <li><a href="#">History</a></li>
-              <li><a href="#">Our Team</a></li>
-              <li><a href="#">Blog</a></li>
-            </ul>
-          </li>
+          </button>
 
-          <li>Careers</li>
-          <li>About</li>
+          <ul class="navbar__links__dropdown-menu">
+            <li><a href="#">History</a></li>
+            <li><a href="#">Our Team</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
         </div>
 
-        <div class="navbar__btn-container">
+        <button>Careers</button>
+        <button>About</button>
+
+        <ul class="navbar__btn-container">
           <li class="navbar__btn-container__login-btn">Login</li>
           <li class="navbar__btn-container__register-btn">Register</li>
-        </div>
+        </ul>
       </ul>
     </nav>
     <div class="body-container">

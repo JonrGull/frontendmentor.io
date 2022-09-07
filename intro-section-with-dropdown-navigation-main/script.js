@@ -1,8 +1,11 @@
-const toggleButton = document.getElementsByClassName("navbar__menu-btn")[0];
-const navbarLinks = document.getElementsByClassName("navbar__links")[0];
-const navbarBtn = document.getElementsByClassName("navbar__btn-container")[0];
+document.addEventListener("click", function (event) {
+  document
+    .querySelectorAll(".navbar__links__dropdown-menu")
+    .forEach(function (item) {
+      item.classList.remove("active");
+    });
 
-toggleButton.addEventListener("click", () => {
-  navbarLinks.classList.toggle("active");
-  navbarBtn.classList.toggle("active");
+  if (event.target.classList.contains("navbar__links__dropdown-header")) {
+    event.target.nextElementSibling.classList.toggle("active");
+  }
 });
