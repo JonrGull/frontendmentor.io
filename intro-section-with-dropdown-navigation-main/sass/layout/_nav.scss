@@ -1,4 +1,7 @@
 li {
+}
+
+a {
   @include blockSize;
 }
 
@@ -27,7 +30,6 @@ button {
   &__links {
     &__dropdown-menu {
       display: none;
-
       &.active {
         display: block;
         position: absolute;
