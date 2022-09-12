@@ -11,47 +11,51 @@
   grid-template-columns: 1fr 1fr;
   margin-left: 10vw;
 
+  &__learn-btn {
+    border: 2px solid $tertiary-black;
+    background-color: $primary-white;
+    border-radius: 15px;
+    padding: 15px 25px 15px 25px;
+    font-size: 1.5em;
+    font-weight: 700;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $tertiary-black;
+      color: $primary-white;
+    }
+  }
+
   &__hero-text {
     font-size: 5em;
     margin-top: 18vh;
+  }
+
+  &__sponsors-container {
+    margin-left: -1vw;
+    margin-top: -15vh;
+
+    img {
+      padding: 1.5vw;
+      max-width: fit-content;
+    }
+  }
+
+  &__hero-image-desktop {
+    float: right;
+    width: 70%;
+    height: auto;
+    margin-right: 10vw;
+  }
+
+  &__hero-image-mobile {
+    display: none;
   }
 }
 
 p {
   line-height: 1.5;
   font-size: 1.2em;
-}
-
-.body-container__learn-btn {
-  border: 2px solid $tertiary-black;
-  background-color: $primary-white;
-  border-radius: 15px;
-  padding: 15px 25px 15px 25px;
-  font-size: 1.5em;
-  font-weight: 700;
-  cursor: pointer;
-
-  &:hover {
-    background-color: $tertiary-black;
-    color: $primary-white;
-  }
-}
-
-.body-container__sponsors-container {
-  margin-left: -1vw;
-  margin-top: -15vh;
-
-  img {
-    padding: 1.5vw;
-    max-width: fit-content;
-  }
-}
-
-.body-container__hero-image {
-  float: right;
-  width: 70%;
-  height: auto;
-  margin-right: 10vw;
 }
 
 .attribution {
@@ -61,5 +65,20 @@ p {
 
   a {
     color: hsl(231, 45%, 44%);
+  }
+}
+
+@media (max-width: 800px) {
+  .body-container {
+    &__hero-image-desktop {
+      display: none;
+    }
+
+    &__hero-image-mobile {
+      display: block;
+      width: 100%;
+      height: auto;
+      margin-top: -10vh;
+    }
   }
 }

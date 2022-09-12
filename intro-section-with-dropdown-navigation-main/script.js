@@ -1,6 +1,7 @@
 const hamburgerBtn = document.querySelector(".navbar__hamburger-btn");
 const navbarLinks = document.querySelector(".navbar__links");
 const navbarBtn = document.querySelector(".navbar__btn-container");
+const bodyContainer = document.querySelector(".body-container");
 
 document.addEventListener("click", (event) => {
   document.querySelectorAll(".navbar__links__dropdown-menu").forEach((item) => {
@@ -17,3 +18,4 @@ hamburgerBtn.addEventListener("click", () => {
     item.classList.toggle("active");
   });
 });
+
