@@ -119,6 +119,14 @@ button {
   }
   .navbar__links li {
     text-align: center;
+    display: block;
+    text-align: center;
+    padding: 1vh 2vw;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .navbar__btn-container {
+    list-style: none;
   }
   .navbar__btn-container.active {
     display: -webkit-box;

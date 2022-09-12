@@ -3,11 +3,9 @@ const navbarLinks = document.querySelector(".navbar__links");
 const navbarBtn = document.querySelector(".navbar__btn-container");
 
 document.addEventListener("click", (event) => {
-  document
-    .querySelectorAll(".navbar__links__dropdown-menu")
-    .forEach(function (item) {
-      item.classList.remove("active");
-    });
+  document.querySelectorAll(".navbar__links__dropdown-menu").forEach((item) => {
+    item.classList.remove("active");
+  });
 
   if (event.target.classList.contains("navbar__links__dropdown-header")) {
     event.target.nextElementSibling.classList.toggle("active");
@@ -15,6 +13,7 @@ document.addEventListener("click", (event) => {
 });
 
 hamburgerBtn.addEventListener("click", () => {
-  navbarLinks.classList.toggle("active");
-  navbarBtn.classList.toggle("active");
+  document.querySelectorAll(".navbar__links").forEach((item) => {
+    item.classList.toggle("active");
+  });
 });

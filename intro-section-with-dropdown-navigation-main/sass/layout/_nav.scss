@@ -101,12 +101,14 @@ button {
       }
       li {
         text-align: center;
-        a {
-        }
+        @include blockSize;
+        // a {
+        // }
       }
     }
 
     &__btn-container {
+      list-style: none;
       &.active {
         display: flex;
         flex-direction: column;
