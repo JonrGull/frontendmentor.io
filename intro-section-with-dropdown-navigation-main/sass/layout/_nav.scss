@@ -2,10 +2,6 @@ li {
   list-style: none;
 }
 
-a {
-  @include blockSize;
-}
-
 button {
   background-color: transparent;
   border: none;
@@ -42,6 +38,7 @@ button {
         overflow: auto;
         a {
           text-decoration: none;
+          @include blockSize;
         }
       }
     }
@@ -64,6 +61,7 @@ button {
     &__login-btn {
       margin-right: 3vw;
       padding: 5px 0 5px 0;
+      cursor: pointer;
     }
 
     &__register-btn {
@@ -72,6 +70,7 @@ button {
       border-radius: 15px;
       padding: 15px 25px 15px 25px;
       margin-top: -1vh;
+      cursor: pointer;
 
       &:hover {
         background-color: $tertiary-black;
@@ -93,6 +92,7 @@ button {
   }
 
   .navbar {
+    display: flex;
     &__links {
       &.active {
         display: flex;
@@ -111,20 +111,15 @@ button {
     &__btn-container {
       list-style: none;
       &.active {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-end;
+        @include centerFlex;
       }
     }
 
     &__hamburger-btn {
       position: absolute;
-      top: 0.75rem;
-      right: 1rem;
-      display: inline-block;
-      flex-direction: column;
-      justify-content: space-between;
+      top: 0;
+      right: 0;
+      display: block;
       width: 30px;
       height: 21px;
     }

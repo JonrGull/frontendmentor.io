@@ -18,6 +18,7 @@
     padding: 15px 25px 15px 25px;
     font-size: 1.5em;
     font-weight: 700;
+    margin-top: 7vh;
     cursor: pointer;
 
     &:hover {
@@ -29,23 +30,26 @@
   &__hero-text {
     font-size: 5em;
     margin-top: 18vh;
-  }
-
-  &__sponsors-container {
-    margin-left: -1vw;
-    margin-top: -15vh;
-
-    img {
-      padding: 1.5vw;
-      max-width: fit-content;
+    &__make-text {
+      display: block;
     }
   }
 
   &__hero-image-desktop {
     float: right;
-    width: 70%;
+    width: 58%;
     height: auto;
     margin-right: 10vw;
+  }
+
+  &__sponsors-container {
+    margin-left: -1vw;
+    margin-top: -5vh;
+
+    img {
+      padding: 1.5vw;
+      max-width: fit-content;
+    }
   }
 
   &__hero-image-mobile {
@@ -70,15 +74,36 @@ p {
 
 @media (max-width: 800px) {
   .body-container {
+    @include centerFlex;
     &__hero-image-desktop {
       display: none;
     }
 
     &__hero-image-mobile {
-      display: block;
-      width: 100%;
+      @include centerFlex;
+      // width: 100%;
       height: auto;
-      margin-top: -10vh;
+    }
+
+    &__hero-text {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 2em;
+
+      &__make-text {
+        margin-right: 2vw;
+      }
+    }
+
+    &__learn-btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &__sponsors-container {
+      margin-top: 5vh;
     }
   }
 }

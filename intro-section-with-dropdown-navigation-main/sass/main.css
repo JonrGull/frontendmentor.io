@@ -3,14 +3,6 @@ li {
   list-style: none;
 }
 
-a {
-  display: block;
-  text-align: center;
-  padding: 1vh 2vw;
-  text-decoration: none;
-  cursor: pointer;
-}
-
 button {
   background-color: transparent;
   border: none;
@@ -57,6 +49,11 @@ button {
 
 .navbar__links__dropdown-menu.active a {
   text-decoration: none;
+  display: block;
+  text-align: center;
+  padding: 1vh 2vw;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .navbar__links a:hover {
@@ -83,6 +80,7 @@ button {
 .navbar__btn-container__login-btn {
   margin-right: 3vw;
   padding: 5px 0 5px 0;
+  cursor: pointer;
 }
 
 .navbar__btn-container__register-btn {
@@ -91,6 +89,7 @@ button {
   border-radius: 15px;
   padding: 15px 25px 15px 25px;
   margin-top: -1vh;
+  cursor: pointer;
 }
 
 .navbar__btn-container__register-btn:hover {
@@ -107,6 +106,11 @@ button {
   .navbar__links,
   .navbar__btn-container {
     display: none;
+  }
+  .navbar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
   .navbar__links.active {
     display: -webkit-box;
@@ -143,22 +147,15 @@ button {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .navbar__hamburger-btn {
     position: absolute;
-    top: 0.75rem;
-    right: 1rem;
-    display: inline-block;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    top: 0;
+    right: 0;
+    display: block;
     width: 30px;
     height: 21px;
   }
@@ -187,6 +184,7 @@ button {
   padding: 15px 25px 15px 25px;
   font-size: 1.5em;
   font-weight: 700;
+  margin-top: 7vh;
   cursor: pointer;
 }
 
@@ -200,9 +198,20 @@ button {
   margin-top: 18vh;
 }
 
+.body-container__hero-text__make-text {
+  display: block;
+}
+
+.body-container__hero-image-desktop {
+  float: right;
+  width: 58%;
+  height: auto;
+  margin-right: 10vw;
+}
+
 .body-container__sponsors-container {
   margin-left: -1vw;
-  margin-top: -15vh;
+  margin-top: -5vh;
 }
 
 .body-container__sponsors-container img {
@@ -210,13 +219,6 @@ button {
   max-width: -webkit-fit-content;
   max-width: -moz-fit-content;
   max-width: fit-content;
-}
-
-.body-container__hero-image-desktop {
-  float: right;
-  width: 70%;
-  height: auto;
-  margin-right: 10vw;
 }
 
 .body-container__hero-image-mobile {
@@ -239,14 +241,68 @@ p {
 }
 
 @media (max-width: 800px) {
+  .body-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
   .body-container__hero-image-desktop {
     display: none;
   }
   .body-container__hero-image-mobile {
-    display: block;
-    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     height: auto;
-    margin-top: -10vh;
+  }
+  .body-container__hero-text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 2em;
+  }
+  .body-container__hero-text__make-text {
+    margin-right: 2vw;
+  }
+  .body-container__learn-btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .body-container__sponsors-container {
+    margin-top: 5vh;
   }
 }
 /*# sourceMappingURL=main.css.map */
